@@ -1,0 +1,42 @@
+{
+  "name": "subscription-manager",
+  "version": "3.2.10",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS=--max-old-space-size=4096 NEXT_TELEMETRY_DISABLED=1 next dev",
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=4096 next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "tsx --test src/lib/*.test.ts",
+    "test:api": "node scripts/test-api.js"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@iconify-icon/react": "^2.3.0",
+    "axios": "^1.7.7",
+    "currency-symbol-map": "^5.1.0",
+    "date-fns": "^4.1.0",
+    "framer-motion": "^11.5.6",
+    "next": "14.2.35",
+    "react": "^18.3.1",
+    "react-datepicker": "^7.5.0",
+    "react-dom": "^18.3.1",
+    "recharts": "^3.6.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "styled-components": "^6.1.13",
+    "undici": "^6.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "cross-env": "^10.1.0",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "14.2.35",
+    "tsx": "^4.23.12",
+    "typescript": "^5.3.0"
+  }
+}
